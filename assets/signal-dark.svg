@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="90" viewBox="0 0 1200 90" role="img" aria-labelledby="title">
+<title id="title">Animated terminal: EOF thoughts and memory blocks</title>
+<style><![CDATA[
+ .line-one{animation:first 10s steps(1,end) infinite}
+ .line-two{animation:second 10s steps(1,end) infinite;opacity:0}
+ .caret{animation:blink 1s steps(1,end) infinite}
+ @keyframes first{0%,47%,100%{opacity:1}50%,97%{opacity:0}}
+ @keyframes second{0%,47%,100%{opacity:0}50%,97%{opacity:1}}
+ @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+ @media(prefers-reduced-motion:reduce){.line-one,.line-two,.caret{animation:none}.line-two{opacity:0}}
+]]></style>
+<rect x="1.5" y="1.5" width="1197" height="87" rx="17" fill="#0d121b" stroke="#2a3649" stroke-width="3"/>
+<circle cx="38" cy="45" r="6" fill="#59e8c6"/>
+<text x="61" y="53" fill="#7990a9" font-family="Consolas, Menlo, Monaco, monospace" font-size="20">~/thoughts</text>
+<text x="190" y="53" fill="#59e8c6" font-family="Consolas, Menlo, Monaco, monospace" font-size="22" font-weight="bold">&gt;</text>
+<g class="line-one"><text x="285" y="54" fill="#e4ebf5" font-family="Consolas, Menlo, Monaco, monospace" font-size="23">EOF: Thoughts terminated cleanly.</text></g>
+<g class="line-two"><text x="285" y="54" fill="#e4ebf5" font-family="Consolas, Menlo, Monaco, monospace" font-size="20">Memory blocks unmapped and flushed into dark matter.</text></g>
+<rect class="caret" x="1143" y="33" width="8" height="25" fill="#aa8eff"/>
+</svg>
